@@ -1,2 +1,2 @@
-#nvim_config
+# nvim_config
 Directory : ~/.config/nvim/

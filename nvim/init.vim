@@ -59,14 +59,26 @@ au BufReadPost *
 "show current point(x,y) of cursor"
 set statusline=\ %<%l:%v\ [%P]%=%a\ %h%m%r\ %F\
 
-"for OCaml"
-"ocaml global setting"
-filetype indent on
-filetype plugin on
 
 "Python linter (disabled Convention, Refactor, Warning options)"
 let g:syntastic_python_checkers = ['pylint']
 let g:syntastic_python_pylint_args = ['--disable=C,R,W']
+
+
+"for OCaml"
+"ocaml global setting"
+
+filetype indent on
+filetype plugin on
+
+let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
+
+au BufRead,BufNewFile *.ml,*.mli compiler ocaml 
+au BufEnter *.ml,*.mli setf ocaml
+
+"OCaml merlin"
+execute "set rtp+=" . g:opamshare . "/merlin/vim"
+let g:syntastic_ocaml_checkers = ['merlin']
 
 "vim/nvim root"
 if has('nvim')
@@ -102,6 +114,7 @@ Plugin 'altercation/vim-colors-solarized'
 " Syntax, Text
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
+
 Plugin 'vim-syntastic/syntastic'
 Plugin 'let-def/ocp-indent-vim'
 Plugin 'terryma/vim-multiple-cursors'

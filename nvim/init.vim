@@ -67,16 +67,14 @@ let g:syntastic_python_pylint_args = ['--disable=C,R,W']
 
 "for OCaml"
 "ocaml global setting"
+let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
 
 filetype indent on
 filetype plugin on
-
-let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
-
 au BufRead,BufNewFile *.ml,*.mli compiler ocaml 
 au BufEnter *.ml,*.mli setf ocaml
 
-"OCaml merlin"
+"OCaml merlin (prerequisites : opam, merlin(opam), conf-vim(opam))"
 execute "set rtp+=" . g:opamshare . "/merlin/vim"
 let g:syntastic_ocaml_checkers = ['merlin']
 

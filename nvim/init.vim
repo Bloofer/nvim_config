@@ -119,6 +119,8 @@ Plugin 'terryma/vim-multiple-cursors'
 " not familiar with this yet
 "Plugin 'Valloric/YouCompleteMe'
 
+Plugin 'davidhalter/jedi-vim'
+
 "Plugin 'tpope/vim-fugitive' "conflict with ocp-indent.. you should use git in
 
 " Fuzzy search

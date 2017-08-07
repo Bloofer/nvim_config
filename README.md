@@ -10,3 +10,11 @@ Pylint options :
   - disabled = (C) : Conventions, (R) : Refactors, (W) : Warnings
   - abled = (E) : Errors, (F) : Fatals
   - only showing abled options
+
+Troubleshooting :
+  - merlin error - 'Syntastic' not recognizing ocamlmerlin  
+  - check path settings on the shell by  
+  <code># echo $PATH</code>  
+  - if there is no ocamlmerlin path on the shell, then add the path by  
+  <code># export PATH=$PATH:/home/jmyang/.opam/4.04.2/bin</code>  
+  - merlin uses ocamlmerlin binary files for running

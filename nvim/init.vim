@@ -25,6 +25,7 @@ set magic
 set sm
 
 "syntax"
+syntax on
 syntax enable
 set history=256
 set ruler

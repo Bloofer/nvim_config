@@ -18,3 +18,9 @@ Troubleshooting :
   - if there is no ocamlmerlin path on the shell, then add the path by  
   <code># export PATH=$PATH:/home/jmyang/.opam/4.04.2/bin</code>  
   - merlin uses ocamlmerlin binary files for running
+
+Merlin Key Bindings :
+  - Ctrl + x + o : Auto-complete
+  - Ctrl + c + t : MerlinTypeOf
+  - Ctrl + c + l : MerlinLocate(Locate the definition)
+  - Ctrl + c + r : Clear enclosing

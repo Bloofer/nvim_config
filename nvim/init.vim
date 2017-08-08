@@ -193,6 +193,7 @@ nnoremap <C-l> <C-w>l
 " Merlin
 map <C-c><C-t> <ESC>:MerlinTypeOf<CR>
 map <C-c><C-l> <ESC>:MerlinLocate<CR>
+map <C-c><C-r> <ESC>:MerlinClearEnclosing<CR>
 
 " FZF
 map <S-r> :FZF<CR>

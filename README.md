@@ -18,6 +18,8 @@ Troubleshooting :
   - if there is no ocamlmerlin path on the shell, then add the path by  
   <code># export PATH=$PATH:/home/jmyang/.opam/4.04.2/bin</code>  
   - merlin uses ocamlmerlin binary files for running
+  - read and try [this](https://github.com/ocaml/merlin/wiki/vim-from-scratch)(at the bottom) for troubleshooting
+  - **must read [this](https://github.com/neovim/python-client).** must set vim python compile settings for Neovim
 
 Merlin Key Bindings :
   - Ctrl + x + o : Auto-complete

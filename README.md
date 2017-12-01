@@ -26,3 +26,6 @@ Merlin Key Bindings :
   - Ctrl + c + t : MerlinTypeOf
   - Ctrl + c + l : MerlinLocate(Locate the definition)
   - Ctrl + c + r : Clear enclosing
+
+Python autocompletion :
+  - Ctrl + space : jedi-vim autocompletion(Requires jevi-vim & pylint)
